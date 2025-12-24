@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagadeesh Mamidi | Cybersecurity Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f172a, #020617);
+            color: #e5e7eb;
+            overflow-x: hidden;
+        }
+
+        /* ===== Dynamic Animated Background ===== */
+        .animated-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            overflow: hidden;
+            background: radial-gradient(circle at top, #020617, #000);
+        }
+
+        .animated-bg span {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: rgba(56, 189, 248, 0.6);
+            border-radius: 50%;
+            box-shadow: 0 0 15px #38bdf8;
+            animation: floatParticles 20s linear infinite;
+        }
+
+        .animated-bg span:nth-child(1) { left: 10%; animation-duration: 18s; }
+        .animated-bg span:nth-child(2) { left: 30%; animation-duration: 25s; }
+        .animated-bg span:nth-child(3) { left: 50%; animation-duration: 20s; }
+        .animated-bg span:nth-child(4) { left: 70%; animation-duration: 30s; }
+        .animated-bg span:nth-child(5) { left: 90%; animation-duration: 22s; }
+
+        @keyframes floatParticles {
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        header {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 15px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 30px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+            transform: translateY(-3px);
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        p, li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #e5e7eb;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-box {
+            background: #020617;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid #1e293b;
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #020617;
+            padding: 25px;
+            border-radius: 14px;
+            border-left: 5px solid #38bdf8;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Animated Background -->
+<div class="animated-bg">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<header>
+    <div>
+        <h1>MAMIDI JAGADEESH</h1>
+        <p>Computer Science Student | Cybersecurity Enthusiast</p>
+        <p>Srikakulam, Andhra Pradesh, India</p>
+        <a class="btn" href="https://linkedin.com/in/jagadeesh46" target="_blank">View LinkedIn</a>
+        <a class="btn" href="https://github.com/jagadishmamidi28" target="_blank">View github</a>
+    </div>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech Computer Science student with a strong foundation in cybersecurity, ethical hacking, and cloud security. I am passionate about Zero Trust security models and continuously improving my technical and professional skills.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>B.Tech – Computer Science</h3>
+            <p>Kakinada Institute of Engineering and Technology</p>
+            <p>2023 – 2027</p>
+        </div>
+        <div class="card">
+            <h3>Intermediate (MPC)</h3>
+            <p>Sri Venkateswara Junior College</p>
+            <p>2020 – 2023</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Windows</div>
+        <div class="skill-box">Linux</div>
+        <div class="skill-box">Ethical Hacking</div>
+        <div class="skill-box">Zero Trust Security</div>
+        <div class="skill-box">Threat Analysis</div>
+        <div class="skill-box">Networking</div>
+        <div class="skill-box">Cloud Security</div>
+    </div>
+</section>
+
+<section>
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>Member – Cyber Crew</h3>
+        <p>Kakinada Institute of Engineering and Technology</p>
+        <p>Active participation in ethical hacking activities, workshops, and cybersecurity projects.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Virtual Internships</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Zero Trust Cloud Security</h3>
+            <p>Zscaler | AICTE & EduSkills</p>
+        </div>
+        <div class="card">
+            <h3>Ethical Hacking Internship</h3>
+            <p>AICTE – EduSkills (10 Weeks)</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">Web Vulnerability Scanner</div>
+        <div class="card">Network Security Analysis Tool</div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: jagadeeshmamidi760@gmail.com</p>
+    <p>Phone: +91-8520917645</p>
+</section>
+
+<footer>
+    <p>© 2025 Mamidi Jagadeesh | Cybersecurity Portfolio</p>
+</footer>
+
+</body>
+</html>
